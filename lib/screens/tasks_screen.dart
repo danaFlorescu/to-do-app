@@ -3,9 +3,7 @@ import 'package:todoey/widgets/task_tile.dart';
 import 'package:todoey/widgets/tasks_list.dart';
 
 class TasksScreen extends StatelessWidget {
-  Widget buildBottomSheet(BuildContext context) {
-    return Container();
-  }
+  //Widget buildBottomSheet(BuildContext context) => Container();
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +15,7 @@ class TasksScreen extends StatelessWidget {
         onPressed: () {
           showModalBottomSheet(
             context: context,
-            builder: buildBottomSheet,
+            builder: (BuildContext context) => Container(),
           );
         },
       ),
